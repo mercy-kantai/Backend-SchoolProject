@@ -1,11 +1,10 @@
 from django.db import models
 
+
 # Create your models here.
 class Course(models.Model):
     course_name = models.CharField(max_length=20)
     course_duration = models.DurationField() 
-    course_start_date = models.DateField()
-    course_end_date = models.DateField()
     course_description = models.TextField()
     course_id = models.PositiveSmallIntegerField()
     course_department = models.CharField(max_length=20)
